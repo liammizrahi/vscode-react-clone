@@ -5,8 +5,14 @@ import FileExplorer from "./components/FileExplorer";
 import BottomBar from "./components/BottomBar";
 import MonacoEditor from "./MonacoEditor";
 import "./styles/App.css";
+import Editor from "@monaco-editor/react";
 
 function App() {
+    function handleEditorChange(value, event) {
+        //console.log("here is the current model value:", value);
+        BottomBar.handleTextInputChange(value);
+    }
+
     return (
         <div className="App">
             <Toolbar />
@@ -17,7 +23,13 @@ function App() {
             </div>
             <div className="main">
                 <FileExplorer />
-                <MonacoEditor />
+                <Editor
+                    height="90vh"
+                    defaultLanguage="javascript"
+                    theme="vs-dark"
+                    defaultValue="console.log('Hello World!');"
+                    onChange={handleEditorChange}
+                />
             </div>
             <BottomBar />
         </div>
