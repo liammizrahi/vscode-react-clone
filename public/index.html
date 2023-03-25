@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>My VS Code Clone</title>
+    <script src="http://localhost:8097"></script>
+    <link rel="stylesheet" href="./assets/app.css" />
+</head>
+<body>
+<div id="root"></div>
+<script src="../node_modules/requirejs/require.js"></script>
+<script>
+    window.MonacoEnvironment = {
+        getWorkerUrl: function(workerId, label) {
+            return `data:text/javascript;charset=utf-8,${encodeURIComponent(`
+        self.MonacoEnvironment = {
+          baseUrl: '${window.location.origin}/node_modules/monaco-editor/min'
+        };
+        importScripts('${window.location.origin}/node_modules/monaco-editor/min/vs/base/worker/workerMain.js');
+      `)}`;
+        }
+    };
+</script>
+<script src="./assets/app.js"></script>
+</body>
+</html>

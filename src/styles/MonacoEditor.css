@@ -1,0 +1,205 @@
+/*.monaco-editor {*/
+/*    height: 100%;*/
+/*}*/
+
+/*.monaco-editor .overflow-guard {*/
+/*    position: relative;*/
+/*    height: 100%;*/
+/*    overflow: hidden;*/
+/*    padding: 0;*/
+/*}*/
+
+/*.monaco-editor .monaco-scrollable-element {*/
+/*    height: 100%;*/
+/*}*/
+
+/*.monaco-editor .view-lines {*/
+/*    font-family: 'Fira Code', monospace;*/
+/*    font-size: 14px;*/
+/*    line-height: 20px;*/
+/*    padding: 20px;*/
+/*    white-space: pre-wrap;*/
+/*}*/
+
+/*.monaco-editor .view-lines .monaco-highlighted-source {*/
+/*    background-color: rgba(20, 20, 20, 0.3);*/
+/*}*/
+
+/*.monaco-editor .monaco-editor-background {*/
+/*    background-color: #2e2e2e;*/
+/*}*/
+
+/*.monaco-editor .monaco-editor .cursor {*/
+/*    background-color: #fff;*/
+/*    border-left: 2px solid #fff;*/
+/*}*/
+
+/*.monaco-editor .monaco-editor .cursor.hidden {*/
+/*    opacity: 0;*/
+/*}*/
+
+/*.monaco-editor .monaco-editor .cursor-dormant {*/
+/*    border-left: 2px dashed #fff;*/
+/*}*/
+
+/*.monaco-editor .monaco-editor .selection {*/
+/*    background-color: rgba(255, 255, 255, 0.1);*/
+/*    border-radius: 0;*/
+/*}*/
+
+/*.monaco-editor .monaco-editor .wordHighlight {*/
+/*    background-color: rgba(255, 255, 0, 0.3);*/
+/*    border-radius: 0;*/
+/*}*/
+
+/*.monaco-editor .monaco-editor .wordHighlight-strong {*/
+/*    background-color: rgba(255, 255, 0, 0.5);*/
+/*    border-radius: 0;*/
+/*}*/
+
+/*.monaco-editor .monaco-editor .findMatch {*/
+/*    background-color: rgba(255, 255, 0, 0.3);*/
+/*    border-radius: 0;*/
+/*}*/
+
+/*.monaco-editor .monaco-editor .currentFindMatch {*/
+/*    background-color: rgba(255, 255, 0, 0.5);*/
+/*    border-radius: 0;*/
+/*}*/
+
+/*.monaco-editor .monaco-editor .hoverHighlight {*/
+/*    background-color: rgba(255, 255, 0, 0.1);*/
+/*    border-radius: 0;*/
+/*}*/
+
+/*.monaco-editor .monaco-editor .highlight {*/
+/*    background-color: rgba(255, 255, 0, 0.3);*/
+/*    border-radius: 0;*/
+/*}*/
+
+/*.monaco-editor .monaco-editor .lineHighlight {*/
+/*    background-color: rgba(255, 255, 0, 0.1);*/
+/*    border-radius: 0;*/
+/*}*/
+
+/*.monaco-editor .monaco-editor .rangeHighlight {*/
+/*    background-color: rgba(255, 255, 0, 0.1);*/
+/*    border-radius: 0;*/
+/*}*/
+
+/*.monaco-editor .monaco-editor .link {*/
+/*    color: #0000ff;*/
+/*    text-decoration: underline;*/
+/*    cursor: pointer;*/
+/*}*/
+
+/*.monaco-editor .monaco-editor .reference-zone-widget {*/
+/*    background-color: rgba(255, 255, 0, 0.1);*/
+/*    border-radius: 0;*/
+/*}*/
+
+/*.monaco-editor .monaco-editor .wordHighlight.textMateScope {*/
+/*    background-color: rgba(255, 0, 0, 0.2);*/
+/*}*/
+
+/*.monaco-editor .monaco-editor .wordHighlight-strong.textMateScope {*/
+/*    background-color: rgba(255, 0, 0, 0.4);*/
+/*}*/
+
+/*.monaco-editor .monaco-editor .hoverHighlight.textMateScope {*/
+/*    background-color: rgba(255, 0, 0, 0.1);*/
+/*}*/
+
+/*.monaco-editor .monaco-editor .hoverHighlight {*/
+/*    position: absolute;*/
+/*    z-index: 2;*/
+/*    pointer-events: none;*/
+/*    border: 1px solid transparent;*/
+/*}*/
+
+/*.monaco-editor .monaco-editor .hoverHighlight:not(.highlight) {*/
+/*    opacity: 0;*/
+/*}*/
+
+/*.monaco-editor .monaco-editor .hoverHighlight.textMateScope {*/
+/*    background-color: rgba(255, 0, 0, 0.1);*/
+/*}*/
+
+/*.monaco-editor .monaco-editor .hoverHighlight.highlight {*/
+/*    border-color: #007acc;*/
+/*    border-radius: 3px;*/
+/*}*/
+
+/*.monaco-editor .monaco-editor .hoverHighlight.highlight .wordHighlight {*/
+/*    background-color: rgba(0, 122, 204, 0.1);*/
+/*}*/
+
+/*.monaco-editor .monaco-editor .hoverHighlight.highlight .selectionHighlight {*/
+/*    background-color: rgba(0, 122, 204, 0.1);*/
+/*}*/
+
+/*.monaco-editor .monaco-editor .suggest-widget {*/
+/*    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);*/
+/*    background-color: var(--vscode-menu-background);*/
+/*}*/
+
+/*.monaco-editor .monaco-editor .suggest-widget .monaco-list-rows {*/
+/*    max-height: 250px;*/
+/*    overflow: auto;*/
+/*}*/
+
+/*.monaco-editor .monaco-editor .suggest-widget .monaco-list-row {*/
+/*    color: var(--vscode-editor-foreground);*/
+/*    cursor: pointer;*/
+/*    padding: 3px 8px;*/
+/*    font-size: 13px;*/
+/*}*/
+
+/*.monaco-editor .monaco-editor .suggest-widget .monaco-list-row .label-name {*/
+/*    margin-right: 10px;*/
+/*    font-weight: bold;*/
+/*}*/
+
+/*.monaco-editor .monaco-editor .suggest-widget .monaco-list-row .label-type {*/
+/*    opacity: 0.6;*/
+/*}*/
+
+/*.monaco-editor .monaco-editor .suggest-widget .monaco-list-row.code-action {*/
+/*    background-color: var(--vscode-menu-background);*/
+/*    border-top: 1px solid var(--vscode-menu-border);*/
+/*}*/
+
+/*.monaco-editor .monaco-editor .suggest-widget .monaco-list-row.code-action:hover {*/
+/*    background-color: var(--vscode-menu-selection-background);*/
+/*}*/
+
+/*.monaco-editor .monaco-editor .suggest-widget .monaco-list-row.code-action .label-description {*/
+/*    margin-right: 10px;*/
+/*    opacity: 0.6;*/
+/*}*/
+
+/*.monaco-editor .monaco-editor .suggest-widget .monaco-list-row.code-action .label-keybinding {*/
+/*    margin-left: 10px;*/
+/*    opacity: 0.6;*/
+/*}*/
+
+/*.monaco-editor .monaco-editor .suggest-widget .monaco-list-row.selected {*/
+/*    background-color: var(--vscode-menu-selection-background);*/
+/*    color: var(--vscode-menu-selection-foreground);*/
+/*}*/
+
+/*.monaco-editor .monaco-editor .suggest-widget .monaco-list-row.selected .label-name {*/
+/*    font-weight: bold;*/
+/*}*/
+
+/*.monaco-editor .monaco-editor .suggest-widget .monaco-list-row.selected .label-type {*/
+/*    opacity: 1;*/
+/*}*/
+
+/*.monaco-editor .monaco-editor .suggest-widget .monaco-list-row.selected .label-description {*/
+/*    opacity: 1;*/
+/*}*/
+
+/*.monaco-editor .monaco-editor .suggest-widget .monaco-list-row.selected .label-keybinding {*/
+/*    opacity: 1;*/
+/*}*/

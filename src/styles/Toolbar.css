@@ -1,0 +1,29 @@
+.toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+    background-color: #1e1e1e;
+    color: #d4d4d4;
+    padding: 0 10px;
+}
+
+.toolbar-button {
+    background-color: transparent;
+    color: inherit;
+    border: none;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.search-input {
+    height: 20px;
+    width: 150px;
+    background-color: #2d2d2d;
+    color: #d4d4d4;
+    border: none;
+    padding: 5px;
+    margin-right: 5px;
+    font-size: 14px;
+}
+

@@ -1,0 +1,62 @@
+{
+  "name": "openwz-react",
+  "version": "1.0.0",
+  "description": "WZ Programming Language IDE",
+  "main": "electron.js",
+  "scripts": {
+    "prebuild": "esbuild src/index.js --bundle --loader:.js=jsx --loader:.ttf=file --outfile=public/assets/app.js",
+    "dev": "esbuild src/index.js --bundle --loader:.js=jsx --loader:.ttf=file --outfile=public/assets/app.js && electron . && react-devtools",
+    "build": "esbuild src/index.js --bundle --loader:.js=jsx --loader:.ttf=file --outfile=public/assets/app.js && electron .",
+    "postbuild": "esbuild src/index.js --bundle --loader:.js=jsx --loader:.ttf=file --outfile=public/assets/app.js && electron-forge make"
+  },
+  "author": "Liam Mizrahi",
+  "license": "ISC",
+  "keywords": [],
+  "devDependencies": {
+    "@babel/core": "^7.21.3",
+    "@babel/preset-env": "^7.20.2",
+    "@babel/preset-react": "^7.18.6",
+    "@electron-forge/cli": "^6.0.5",
+    "@rollup/plugin-babel": "^6.0.3",
+    "@vitejs/plugin-react": "^3.1.0",
+    "babel-loader": "^9.1.2",
+    "electron": "^23.2.0",
+    "monaco-editor": "^0.36.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "vite": "^4.2.1"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.3.0",
+    "@fortawesome/free-solid-svg-icons": "^6.3.0",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "requirejs": "^2.3.6"
+  },
+  "esbuild": {
+    "jsxInject": "import React from 'react';",
+    "loader": {
+      ".js": "jsx"
+    }
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ]
+  },
+  "make_targets": {
+    "darwin": [
+      "dmg"
+    ]
+  },
+  "config": {
+    "forge": {
+      "make_targets": {
+        "darwin": [
+          "dmg",
+          "zip"
+        ]
+      }
+    }
+  }
+}

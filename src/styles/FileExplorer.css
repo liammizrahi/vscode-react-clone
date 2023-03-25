@@ -1,0 +1,35 @@
+.file-explorer {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    background-color: #2d2d2d;
+    color: #d4d4d4;
+    padding: 5px;
+    border-right: 1px solid #ccc;
+}
+
+.file-explorer-header {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.file-explorer-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.file-explorer-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.file-explorer-item span {
+    margin-left: 5px;
+}
+
+.file-explorer-item:hover {
+    background-color: #3e3e3e;
+}

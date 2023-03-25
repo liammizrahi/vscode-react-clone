@@ -1,0 +1,58 @@
+.App {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.tabs {
+    display: flex;
+    height: 30px;
+    border-bottom: 1px solid #ccc;
+}
+
+.main {
+    display: flex;
+    flex: 1;
+    height: calc(100% - 62px);
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.monaco-editor {
+    flex: 1;
+}
+
+/* Responsiveness */
+
+@media screen and (max-width: 768px) {
+    .file-explorer {
+        display: none;
+    }
+    .monaco-editor {
+        height: 60%;
+    }
+}
+
+/* Colors */
+
+body {
+    background-color: #1e1e1e;
+    color: #d4d4d4;
+    margin: 0;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #2d2d2d;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #5c5c5c;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #7c7c7c;
+}
